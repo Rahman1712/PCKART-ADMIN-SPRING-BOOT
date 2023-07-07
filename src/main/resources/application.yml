@@ -1,0 +1,61 @@
+server:
+  port: 9191
+
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
+# 
+#spring:
+#  application:
+#    name: ADMIN-SERVICE
+    
+product:
+  service:
+    api:
+      url:
+        add: http://localhost:9193/products/pckart/api/v1/products/auth/add-product-imgs
+        delete: http://localhost:9193/products/pckart/api/v1/products/auth/delete-product/
+        update: http://localhost:9193/products/pckart/api/v1/products/auth/update-product/
+        getbyid: http://localhost:9193/products/pckart/api/v1/products/get/product-res/
+
+brand:
+  service:
+    api:
+      url:
+        add: http://localhost:9193/products/pckart/api/v1/brands/auth/add
+        delete: http://localhost:9193/products/pckart/api/v1/brands/auth/delete/
+        update: http://localhost:9193/products/pckart/api/v1/brands/auth/update/
+         
+category:
+  service:
+    api:
+      url:
+        add: http://localhost:9193/products/pckart/api/v1/categories/auth/add
+        delete: http://localhost:9193/products/pckart/api/v1/categories/auth/delete/
+        update: http://localhost:9193/products/pckart/api/v1/categories/auth/update/ 
+        
+cors:
+  set:
+    allowed:
+      origins: http://localhost:4200
+      
+jwt:
+  secret:
+    key:
+      admins: IaiYw5wsEs9UNE6Y557it0VyIVaMz9PZmXx8EsqlZFM
+      users: IaiYw5wsEs9UNE6Y557it0VyIVaMz9PZmXx8EsqlZFM
+      products: IaiYw5wsEs9UNE6Y557it0VyIVaMz9PZmXx8EsqlZFM
+
+
+
+
+
+
+
+    
